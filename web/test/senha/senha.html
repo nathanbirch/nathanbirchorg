@@ -1,0 +1,7 @@
+<input type="text" class="form-control" placeholder="Paste complete URL here" ng-model="baseUrl2" ng-focus="baseUrl = ''" ng-enter="generateSenha_2(baseUrl2)" autofocus/>
+<br>
+<input type="text" class="form-control" placeholder="Enter baseUrl here" ng-model="baseUrl" ng-focus="baseUrl2 = ''" ng-enter="generateSenha(baseUrl)"/>
+<br>
+<button type="button" class="btn btn-info" ng-show="baseUrl" ng-click="generateSenha(baseUrl)">Generate</button>
+<button type="button" class="btn btn-info" ng-show="baseUrl2" ng-click="generateSenha_2(baseUrl2)">Generate</button>
+<button type="button" class="btn btn-info" ng-show="!baseUrl && !baseUrl2" style="opacity:50%;">Generate</button>

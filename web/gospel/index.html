@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="gospelApp" ng-controller="AppCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="common/dependencies/bootstrap.min.css">
+    <link rel="stylesheet" href="common/dependencies/nga.min.css">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/hamb.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/gospel.css" type="text/css" media="screen">
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script> -->
+
+
+    <script src="common/dependencies/jquery.min.js"></script>
+    <script src="common/dependencies/bootstrap.min.js"></script>
+    <script src="common/dependencies/angular.js"></script>
+    <script src="common/dependencies/angular-animate.min.js"></script>
+    <script src="common/dependencies/angular-ui-router.min.js"></script>
+    <script src="common/dependencies/ui-bootstrap-tpls.min.js"></script>
+    <script src="common/dependencies/angular-sanitize.js"></script>
+    <!-- <script src="common/dependencies/firebase.js"></script> -->
+    <script src="common/dependencies/angularfire.min.js"></script>
+<!--     <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD0-P72IDfXauGUf9FThmTIqQM2aEQMglU",
+        authDomain: "gospel-2b431.firebaseapp.com",
+        databaseURL: "https://gospel-2b431.firebaseio.com",
+        storageBucket: "gospel-2b431.appspot.com",
+        messagingSenderId: "908000802287"
+      };
+      firebase.initializeApp(config);
+    </script> -->
+    <script src="app.js"></script>
+    <!-- <script src="config.js"></script> -->
+
+    <script src="constants/quotes.js"></script>
+    <script src="constants/talks.js"></script>
+    <script src="constants/familyTalks.js"></script>
+    <script src="constants/topics.js"></script>
+    <script src="constants/questions.js"></script>
+    <script src="constants/stories.js"></script>
+    <script src="constants/people.js"></script>
+    <script src="constants/ages.js"></script>
+
+    <script src="home/HomeCtrl.js"></script>
+    <script src="common/menuCtrl.js"></script>
+    <script src="famTalks/famTalks.js"></script>
+    <script src="common/myDirectives.js"></script>
+    <!-- <script src="common/modal/modalService.js"></script> -->
+    <script src="topics/topics.js"></script>
+    <script src="search/search.js"></script>
+    <script src="stories/stories.js"></script>
+    <script src="questions/questions.js"></script>
+    <script src="growingUp/growingUp.js"></script>
+    <style>
+        .img1 { height:18px;  padding-bottom:5px; padding-left:3px;}
+        .rotImg { -webkit-transform: rotate(270deg) scale(0.99); transform: rotate(270deg) scale(0.99); margin-top: 50px;}
+        .noPhone  { display:normal; }
+        .yesPhone { display:normal; }
+        }
+        @media screen and (max-width: 780px) { .noPhone  { display:none; } }
+        @media screen and (min-width: 781px) { .yesPhone { display:none; } }
+    </style>
+</head>
+<body ng-hide="!pageLoaded">
+
+
+    <div ui-view="header"></div>
+
+
+    <!-- <div id="wrapper"> -->
+    <div class="noPhone">
+        <div id="wrapper">
+        <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="topScroll" style="position:fixed; top:0;">
+                <p href="" ng-click="go('/home')" class="navbar-brand" style="padding-left:45px; color:#999999; opacity:1; white-space:nowrap;">Gospel Studies</p>
+                <ul class="sidebar-nav">
+                    <li ng-repeat="topic in topics | orderBy:'top.toString()'">
+                        <a href="" ng-click="go('/topics', topic.id)" ng-bind="topic.top"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#menu-toggle" id="menu-toggle">
+                <button id="butttttt" type="button" class="hamburger is-closed" style="position:absolute; margin-top:-10px">
+                  <span class="hamb-top"></span>
+                  <span class="hamb-middle"></span>
+                  <span class="hamb-bottom"></span>
+                </button>
+            </a>
+            <!-- /#sidebar-wrapper -->
+            <div id="page-content-wrapper" class='app-content container-fluid'>
+                <!-- <div id="page-content-wrapper">
+                </div> -->
+                <div class="row">
+                    <div>
+                        <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
+                        <div ui-view="main" style="width:80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yesPhone">
+        <div ui-view="main" style="width:95%; margin-left:2.5%"></div>
+    </div>
+</body>
+    <script>
+        // To handle the toggle of the menu
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");      // Menu
+            $('#headerDiv').toggleClass("pushMeBaby"); // Header Buttons
+            $('#fadeTogID').toggleClass("fadeTog");    // Text: 'Gospel Study' Fade
+        });
+        // To close menu because it opens automatically on page load
+        $(document).ready(function(){
+            $a = true;
+            if ($a == true) {
+                $("#wrapper").toggleClass("toggled");
+                $a = false;
+            }
+        });    
+    </script>
+</html>

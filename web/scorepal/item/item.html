@@ -1,0 +1,57 @@
+<table class="goodTable" style="margin-bottom:0px">
+	<tr style="background-color:{{item.color}}">
+		<td data-toggle="modal" ng-click="openEditItemModal()"><i class="fa fa-pencil" aria-hidden="true" style="color:blue; padding:5px"></i></td>
+		<td><h2><span  ng-bind="item.name" autofocus></span></h2></td>
+		<td data-toggle="modal" ng-click="openDeleteItemModal()"><i class="fa fa-trash-o" aria-hidden="true" style="color:red; padding:5px"></i></td>
+	</tr>
+</table>
+<p ng-bind="item.det" style="font-style: italic; padding-top:5px"></p>
+<!-- <h1><span  ng-bind="item.name"></span></h1> -->
+
+<table ng-show="item.Occurrences.length > 1" style="border: 1px solid black; width:100%;">
+	<thead style="">
+		<td style="width:30%">Total</td>
+		<td style="width:30%">Most Recent</td>
+		<td style="width:30%">Stats</td>
+	</thead>
+	<tr>
+		<td ng-bind="ItemDetails.Total"></td>
+		<td ng-bind="ItemDetails.Recent"></td>
+		<td><i class="fa fa-line-chart" aria-hidden="true" ng-click="go('/stats', item.itemId)"></i></td>
+	</tr>
+</table>
+<p ng-show="!item.Occurrences || item.Occurrences.length < 2" style="color:white; height:42px;"></p>
+<table class="addOccurrenceTable">
+	<tr>
+		<td style="width:50%"><button class="btn btn-info addOccurrenceButton" style="margin-right:5%" data-toggle="modal" ng-click="openAddOccurrenceModal()">Add Occurrence</button></td>
+		<td style="width:50%"><button class="btn btn-info addOccurrenceButton" style="margin-left:5%" ng-click="addQuickOccurrence()">Quick Add</button></td>
+	</tr>
+</table>
+<div ng-show="!item.Occurrences || item.Occurrences.length < 1">
+	<h3>You have no Occurrences for this item.  Let's add some!</h3>
+</div>
+<div ng-show="item.Occurrences && item.Occurrences.length > 0 && !showingSingleOccurrence">
+	<h3>Latest Occurrences</h3>
+	<div class="scrollBaby">
+		<table class="table goodTable bodSmall" style="overflow-x: hidden;">
+			<tr ng-repeat="o in item.Occurrences track by $index" class="itemTableRow">
+				<td ng-click="editOccurrence(o, $index)" data-toggle="modal"><i class="fa fa-pencil" aria-hidden="true" style="color:blue;"></i></td>
+				<td ng-click="openSingleOccurrenceModal(o, $index)">
+					<span ng-show="o.img">
+						<!-- <i class="fa fa-camera" aria-hidden="true" style="color:green"></i>&nbsp; -->
+						<img src="{{o.img}}" style="height:30px; margin:0px;">
+					</span>
+					<span class="ocDate" ng-bind="o.new"></span>
+					<p ng-bind="o.det | limitTo: 50" style="margin-bottom:0px"></p>
+				</td>
+				<td ng-click="deleteOccurrence($index)"><i class="fa fa-trash-o" aria-hidden="true" style="color:red;"></i></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div ng-show="showingSingleOccurrence">
+	<h4>This Instance Occured at <span ng-bind="showingSingleOccurrence.new"></span>.</h4>
+	<p ng-bind="showingSingleOccurrence.det"></p>
+	<button ng-click="closeOccurrence()" type="button" class="btn btn-info">Close Single Occurrence</button>
+</div>

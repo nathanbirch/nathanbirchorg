@@ -1,0 +1,25 @@
+MOBILE APP TODO LIST
+
+	memory pal stuff to do
+		let stats carousel go both ways in a continous loop
+		make hourly graph vertical
+		add timer to next predicted instance
+		add key for colors on stats second page
+		learn how to swipe to trigger $scope.go
+		add question mark icon to top left header for tutorial and ideas
+		drag and drop home page tiles
+
+		cordova stuff to add when ready
+			add notifications for predicted instances
+			add pictures to occurances
+	NEW APPS
+		Make  birchbox with the following requirements
+			use the https://www.omdbapi.com API
+			create a UI component to add movies to the collection of movies
+			allow users to create a profile
+			allow users to create their own movie collection in their profiles
+				These collections will be stored in a database with only their IMDb ID, and individual calls will be made later
+			create typeahead for when users are adding movies
+
+
+

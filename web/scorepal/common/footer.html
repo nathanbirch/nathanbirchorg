@@ -1,0 +1,22 @@
+<div class="mDiv fDiv" ng-class="getTheme()">
+    <table style="width:100%; text-align:center; margin-top:-5px">
+        <tr>
+            <td style="width:33%">
+                <i class="fa fa-2x fa-home COlNorm" ng-class="{'blueCOl': location.$$path == '/home'}" ng-click="go('/home')"></i>
+                <br>
+                <!-- <span style="font-size:15px">Current Review</span> -->
+            </td>
+            <td style="width:33%">
+                <i class="fa fa-2x fa-file-text-o COlNorm" ng-class="{'blueCOl': location.$$path == '/item'}" ng-click="go('/item', 'loadRecent')"></i>
+                <br>
+                <!-- <span style="font-size:15px">{{messages.SAVE_REVIEW}}</span> -->
+            </td>
+            <td style="width:33%">
+                <i class="fa fa-2x fa-line-chart COlNorm" ng-class="{'blueCOl': location.$$path == '/stats'}" ng-click="go('stats', 'loadRecent')"></i>
+                <br>
+                <!-- <span style="font-size:15px">{{messages.SAVE_REVIEW}}</span> -->
+            </td>
+            
+        </tr>
+    </table>
+</div>

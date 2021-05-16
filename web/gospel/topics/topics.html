@@ -1,0 +1,37 @@
+<div ng-show="selectedTopic.top != 'Gospel Topics'">
+	<h4><a href="" ng-click="go('/topics', '0')"><img src="constants/img/i-arrow.png" style="width:50px"/>Go back to all Gospel Topics</a></h4>
+</div>
+
+<div class="image">
+		<img class="jumron" ng-src="{{selectedTopic.displayImage}}" />
+	<h1 class="imgH" ng-bind="selectedTopic.top"></h1>
+</div>
+<div class="topicContents">
+	<h5 ng-show="selectedTopic.description" data-ng-bind-html="selectedTopic.description" class="borderClass"></h5>
+	<div class="oneThird"> <!-- QUOTES -->
+		<h3 ng-show="quotesHTML.length > 0">Quotes</h3>
+		<div data-ng-repeat="q in quotesHTML" class="prim">
+			<single-quote quote='q' page='"topics"'></single-quote>
+		</div>
+	</div>
+		<div class="oneThird"> <!-- TALKS -->
+			<h3 ng-show="talksHTML.length > 0">Talks</h3>
+			<div data-ng-repeat="ta in talksHTML" class="prim">
+				<single-talk talk='ta' page='"topics"'></single-talk>
+			</div>
+		</div>
+	<div class="oneThird"> <!-- TOPICS -->
+		<h3 ng-show="topicsHTML.length > 0">Related Topics</h3>
+		<div data-ng-repeat="to in topicsHTML | orderBy:'top'" class="prim">
+			<single-topic topic='to' page='"topics"' new-go='go("/topics", to.id)'></single-topic>
+		</div>
+		
+	</div>
+</div>
+
+<div ng-if="selectedTopic.top == 'Gospel Topics'">
+	<div ng-repeat="topic in topics | orderBy:'top.toString()'" style="text-align:center;width:100%;">
+		<a href="" style="font-size:150%" ng-click="go('/topics', topic.id)" ng-bind="topic.top"></a>
+	</div>
+</div>
+

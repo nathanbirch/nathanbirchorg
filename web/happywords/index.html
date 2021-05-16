@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="wordsApp" ng-controller="AppCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="common/dependencies/bootstrap.min.css">
+    <link rel="stylesheet" href="common/dependencies/nga.min.css">
+    <link rel="stylesheet" href="css/happy.css" type="text/css" media="screen">
+
+    <script src="common/dependencies/jquery.min.js"></script>
+    <script src="common/dependencies/bootstrap.min.js"></script>
+    <script src="common/dependencies/angular.js"></script>
+    <script src="common/dependencies/angular-animate.min.js"></script>
+    <script src="common/dependencies/angular-ui-router.min.js"></script>
+    <script src="common/dependencies/ui-bootstrap-tpls.min.js"></script>
+    <script src="common/dependencies/angular-sanitize.js"></script>
+    <script src="common/dependencies/angular-route.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <script src="common/constants/letters.js"></script>
+    <script src="common/constants/words.js"></script>
+
+    <script src="home/HomeCtrl.js"></script>
+    <script src="common/myDirectives.js"></script>
+    <script src="letters/letters.js"></script>
+    <style>
+/*        .img1 { height:18px;  padding-bottom:5px; padding-left:3px;}
+        .rotImg { -webkit-transform: rotate(270deg) scale(0.99); transform: rotate(270deg) scale(0.99); margin-top: 50px;}
+        .noPhone  { display:normal; }
+        .yesPhone { display:normal; }
+        }
+        @media screen and (max-width: 780px) { .noPhone  { display:none; } }
+        @media screen and (min-width: 781px) { .yesPhone { display:none; } }*/
+    </style>
+</head>
+<body>
+
+    <div ui-view="header"></div>
+    <div ui-view="main" style="width:90%; margin-left:5%"></div>
+    <div ui-view="footer"></div>
+
+</body>
+ 
+</html>

@@ -1,0 +1,38 @@
+<div style="text-align:center; max-width: 850px; margin: 0 auto !important;">
+	<span ng-show="items.length > 0" style="margin:15px; left:0; position:absolute;"><i class="fa fa-pencil-o" style="color:blue; padding:5px" aria-hidden="true" ng-click="toggleReOrderItems()"></i></span>
+	<button type="button" class="btn btn-info btn-lg btnTopPadding" ng-click="openAddItemModal()">Add New Item</button>
+	<!-- <br><button type="button" class="btn btn-primary btn-sm" style="margin-top:15px" ng-click="toggleReOrderItems()">
+		<span ng-hide="reOrderItems">Re-order Items</span>
+		<span ng-show="reOrderItems">Done With Re-order</span></button> -->
+	<span ng-show="items.length > 0" style="margin:15px; right:0; position:absolute;"><i class="fa fa-trash-o" style="color:red; padding:5px" aria-hidden="true" ng-click="openDeleteAllModal()"></i></span>
+	<br>
+	<br>
+	<div ng-hide="reOrderItems">
+		<div ng-show="items.length > 0">
+			<div ng-repeat="i in items" class="repeaterDiv">
+				<div class="repeatWrap">
+					<div style="max-width:130px; max-height:130px; margin:5px; border-radius:5px;vertical-align:top; display: table; background-color:{{i.color}}" ng-click="go('/item', i.itemId)">
+						<p ng-bind="i.name" class="itemTitle" style=" word-wrap:break-word;"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div ng-show="reOrderItems">
+		<button type="button" class="btn btn-primary btn-sm" style="margin-top:15px" ng-click="toggleReOrderItems()">Done with Re-order</button>
+		<p>Drag and drop the items below to re-order them.</p>
+		<div ng-show="items.length > 0" sv-root sv-part="items">
+			<div ng-repeat="i in items" class="" sv-element="opts">
+				<div class="">
+					<div style="width:100%; max-height:100px; margin:5px; border-radius:5px; vertical-align:top; display: table; background-color:{{i.color}}; text-align: center" ng-click="go('/item', i.itemId)">
+						<p ng-bind="i.name" class="itemTitle" style=" word-wrap:break-word;"></p> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+

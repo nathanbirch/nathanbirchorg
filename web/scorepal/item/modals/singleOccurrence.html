@@ -1,0 +1,17 @@
+<div class="modal-header" style="background-color:{{item.color}};padding:9px 15px;border-bottom:1px solid #eee;-webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;">
+  <button type="button" class="close" ng-click="close()">&times;</button>
+  <h2 class="modal-title">Single Occurrence</h2>
+</div>
+<div class="modal-body">
+  <strong ng-bind="showingSingleOccurrence.prettyDate"></strong>
+
+  <div ng-show="!showingSingleOccurrence.img">
+  	<input type="file" id="addImga" class="hidden" ng-file-select="onFileSelect($files)">
+	<label for="addImga" class="btn btn-info">Add Image to Occurrence</label>
+  </div>
+  <img ng-src="{{showingSingleOccurrence.img}}" style="max-width:100%;" />
+  <p ng-bind="showingSingleOccurrence.det"></p>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" ng-click="close()">Close</button>
+</div>

@@ -1,0 +1,20 @@
+<div style="text-align:center">
+	<img id="primaryLetterImg" class="div-bounce-out" ng-click="playLetterAudio()" ng-src="{{selectedLetter.lettersImg}}" style="height:120px"/>	
+</div>
+
+	<div ng-repeat="s in selectedWords" ng-hide="showSingleWord" >
+		<img ng-src="{{s.img}}" ng-click="clickWord(s)" class="wordImage" ng-style="s.style"/>
+		<!-- <img ng-src="{{s.img}}" ng-init="randomizeImageLocation($index)" ng-click="clickWord(s.img)" class="wordImage" ng-style="s.pos"/> -->
+	</div>
+
+
+
+<div ng-if="showSingleWord" style="width:100%; height:100%; z-index:100">
+<br>
+	<div class="div-bounce-in" ng-click="playAudio()" style="text-align:center">
+		<img ng-src="{{selectedSingleWord.img}}"/><br>
+		<p ng-bind="selectedSingleWord.sel_name" style="font-size:70px"></p>
+
+	</div>
+</div>
+

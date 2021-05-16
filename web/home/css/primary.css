@@ -1,0 +1,412 @@
+body {
+    background-color:#69C869;
+}
+main {
+    padding-top: 0px; 
+    padding-bottom: 10px; 
+    border-radius:15px; 
+    background-color:white; 
+    border: 5px solid #006C00;
+}
+h2 {
+    color: #006C00;
+}
+.theBottom {
+    //position: fixed;
+    /*    bottom: -50;
+        margin: 0 auto;
+        width: 100%;*/
+    text-align: center;
+}
+.effects {
+    margin-top: 6em;
+}
+.crumb {
+    background-color:#69C869;
+    margin-bottom: 2px auto;
+    width: 100%;
+    height: 50px;
+    border-left: 2px solid #006C00;
+    border-right: 2px solid #69C869;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position: 0 0, 0 100% ;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #006C00 0%, #69C869 70%), -webkit-linear-gradient(left, #006C00 0%, #69C869 70%);
+    background-image: -moz-linear-gradient(left, #006C00 0%, #69C869 70%), -moz-linear-gradient(left, #006C00 0%, #69C869 70%);
+    background-image: -o-linear-gradient(left, #006C00 0%, #69C869 70%), -o-linear-gradient(left, #006C00 0%, #69C869 70%);
+    background-image: linear-gradient(to right, #006C00 0%, #69C869 70%), linear-gradient(to right, #006C00 0%, #69C869 70%);
+}
+.crumbP {
+    color:#006C00;
+    font-size:130%;
+}
+.crumbC {
+    color:#333;
+    font-size:130%;
+}
+.mainBar {
+    height:45px;
+    display:inline-block;
+    text-align:center;
+    overflow:visible;
+}
+.mButton {
+    background-color:#006B00;
+}
+.mLink{
+    float:right;
+}
+.fr {
+    float:right;
+}
+.logo {
+    font-family: kunstler script;
+    font-weight: bold;
+    color:#0000ff; 
+    font-size: 50px
+}
+.mainBarButton {
+    display: inherit; 
+    background: -webkit-linear-gradient(#CCFF33, #99FF99); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient     (#CCFF33, #99FF99); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient   (#CCFF33, #99FF99); /* For Firefox 3.6 to 15 */
+    background: linear-gradient        (#CCFF33, #99FF99); /* Standard syntax */
+    position: relative; 
+    width: 150px; 
+    height: 45px; 
+    overflow: visible;
+}
+.control {
+    padding-top:16%; 
+}
+.carouselBack {
+    background-color:#048B04; 
+    padding-top:0px; 
+
+    border-radius: 10px;
+}
+.carouselDesc {
+    padding-top:20px; 
+    float:right;
+    font-size: 30px;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+.picture {
+    width: 100%;
+    height: auto;
+
+}
+.abpic {
+    width:250px; 
+    float:left;
+    border:2px solid black;
+    border-radius: 5px;
+}
+break {
+    padding-left:280px
+}
+.photo {
+    border:2px solid black;
+    border-radius: 5px;
+    width: 60%;
+}
+.photo1 {
+    border:2px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+#grad {
+    background: -webkit-linear-gradient(red, blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, blue); /* Standard syntax */
+}
+.container-top {
+    padding-top:20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.hbutton {
+    border-radius:0px; 
+    font-size: 24px
+}
+
+.centerIt {
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.google {
+    border:2px solid black;
+    padding:4px; 
+    background-image: url("/images/google.jpg");
+    width:20em;
+    height:6em;
+    border-radius: 4px;
+}
+.fgoogle > img,
+.fgoogle a > img {
+    margin-right: auto;
+    margin-left: auto;
+}
+a.fgoogle:hover,
+a.fgoogle:focus,
+a.fgoogle.active {
+    border-color: #048B04;
+}
+.fgoogle .caption {
+    padding: 9px;
+    color: #333;
+}
+
+
+.favButton {
+    border:2px solid black;
+}
+.fthumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #33CCFF;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+.fthumbnail > img,
+.fthumbnail a > img {
+    margin-right: auto;
+    margin-left: auto;
+}
+a.fthumbnail:hover,
+a.fthumbnail:focus,
+a.fthumbnail.active {
+    border-color: green;
+}
+.fthumbnail .caption {
+    padding: 9px;
+    color: #333;
+}
+
+.familyimg {
+    width:100%;
+    border: 2px solid black;
+    border-radius:5px;
+}
+.photo {
+    max-width:100%;
+    border: 2px solid black;
+    border-radius:5px;
+}
+
+/* side nav css code start */
+.row{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+/*#wrapper {
+    padding-left: 70px;
+    transition: all .4s ease 0s;
+    height: 100%
+}*/
+
+/*#sidebar-wrapper {
+    margin-left: -150px;
+    left: 70px;
+    width: 150px;
+    background: #222;
+    position: fixed;
+    height: 100%;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+}*/
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    width: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#c {
+    height:10px; 
+    padding-right:3px
+}
+#page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+}
+#wrapper.active {
+    padding-left: 150px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+}
+#page-content-wrapper {
+    width: 100%;
+}
+/* sidebar as a whole */
+.sidebar-title {
+    border-radius:10px 10px 0px 0px;
+    color: #999;
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 230px;
+    background: #252525;
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #1A1A1A;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    -ms-transition: background .5s;
+    transition: background .5s;
+}
+#sidebar_menu li a, .sidebar-nav li a {
+    color: #999;
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 230px;
+    background: #252525;
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #1A1A1A;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    -ms-transition: background .5s;
+    transition: background .5s;
+}
+.sidebar_name {
+    padding-top: 25px;
+    color: #fff;
+    opacity: .7;
+}
+/* the classes below is the one that controls the buttons in the side nav*/
+.sidebar-nav li {
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sidebar-nav li a {
+    color: #999999;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+    color: #B8B8B8;
+    background: rgba(255,255,255,0.2);
+    text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    line-height: 60px;
+    font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #B8B8B8;
+    background: none;
+}
+.sql {
+    font-size:20px;
+    color:#006C00;
+}
+.pad {
+    padding-left: 280px;
+}
+.pad90 {
+    padding-top:90px
+}
+.something {
+    padding-top:50px;
+}
+
+.fTalk {
+    padding-left:40px;
+    font-size:15px;
+
+}
+.quote {
+    padding-left:30px;
+}
+@media (max-width:991) {
+    .pad90 {
+        padding-top:0px;
+    }
+    .something {
+        display:none;
+    }
+    .control {
+        padding-top:75px;
+    }
+}
+
+@media (max-width:600px) {
+    .mobile {
+        display:none;
+    }
+    .pad {
+        padding-left:0px;
+    }
+    .pad90 {
+        padding-top:0px;
+    }
+}
+
+@media (max-width:400px) {
+    .logo {
+        font-size:30px;
+        font-weight:normal;
+    }
+    .pad90 {
+        padding-top:0px;
+    }
+}
+@media (max-width:285px) {
+    .logo {
+        font-size:20px;
+        font-weight:normal;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 831px) {
+    .dumb {
+        padding-top:50px;
+    }
+}
+@media (min-width:1200px) {
+    .bigC {
+        padding-left:100px
+    }
+}
+
+/*The carousel needs to break at 1199px and 991px.*/

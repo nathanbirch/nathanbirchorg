@@ -1,0 +1,329 @@
+/* index.html start */
+main {
+    height:100%;
+    min-height: 100%;
+    padding-top: 50px;
+    padding-bottom:50px;
+    overflow-y:hidden;	
+}
+.activeZZ {
+    color:red;
+}
+.mainDiv {
+	width:90%; 
+	margin-left:5%;
+	text-align:center;
+}
+.aThemeLink {
+	color:black;
+    text-decoration: none; 
+    background-color: none;
+}
+.aThemeLink a:active {
+	color:pink;
+}
+/* index.html end */
+/* header and footer start */
+.btnTopPadding {
+    margin-top:15px;
+}
+.COlNorm {
+    color:#4D4D4F;
+    margin-top:15px
+} 
+.blueCOl {
+    color:#1C75BC !important;
+}
+.mDiv {
+	width:100%; 
+	height:50px; 
+	text-align:center;
+	position:fixed; 
+	/*background-color:pink*/
+}
+.hDiv {
+	top:0px;
+	left:0px;
+    z-index:1000;
+}
+.fDiv {
+	left:0px;
+	bottom:0px; 
+}
+.title {
+	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+	line-height:50px;
+	font-size:large;
+}
+.titleFake {
+	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+	font-size:large;
+	padding-top:3px;
+}
+/* THEMES START */
+/* THEMES START */
+/* THEMES START */
+.mainGrad_0 { /* red and yellow */ 
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, red, yellow , red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, red, yellow, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, red, yellow, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, yellow , red); /* Standard syntax (must be last) */
+}
+.mainGrad_1 { /* blue and light blue */
+    background: blue; 
+    background: -webkit-linear-gradient(left, blue, aqua, blue);
+    background: -o-linear-gradient(left, blue, aqua, blue); 
+    background: -moz-linear-gradient(left, blue, aqua, blue);
+    background: linear-gradient(to right, blue, aqua, blue); 
+}
+.mainGrad_2 { /* pink and green */
+    background: #e60bba; 
+    background: -webkit-linear-gradient(left, #e60bba, #1cc94a, #e60bba);
+    background: -o-linear-gradient(left, #e60bba, #1cc94a, #e60bba); 
+    background: -moz-linear-gradient(left, #e60bba, #1cc94a, #e60bba);
+    background: linear-gradient(to right, #e60bba, #1cc94a, #e60bba); 
+}
+.mainGrad_3 { /* blue and pink */
+    background: #0b2ce6; 
+    background: -webkit-linear-gradient(left, #0b2ce6, #d580e8, #0b2ce6);
+    background: -o-linear-gradient(left, #0b2ce6, #d580e8, #0b2ce6); 
+    background: -moz-linear-gradient(left, #0b2ce6, #d580e8, #0b2ce6);
+    background: linear-gradient(to right, #0b2ce6, #d580e8, #0b2ce6); 
+}
+.mainGrad_4 { /* aqua and light pink */
+    background: #0be6db; 
+    background: -webkit-linear-gradient(left, #0be6db, #de80e8, #0be6db);
+    background: -o-linear-gradient(left, #0be6db, #de80e8, #0be6db); 
+    background: -moz-linear-gradient(left, #0be6db, #de80e8, #0be6db);
+    background: linear-gradient(to right, #0be6db, #de80e8, #0be6db); 
+}
+.mainGrad_5 { /* dark blue and light green */
+    background: #4d0be6; 
+    background: -webkit-linear-gradient(left, #4d0be6, #2bfc74, #4d0be6);
+    background: -o-linear-gradient(left, #4d0be6, #2bfc74, #4d0be6); 
+    background: -moz-linear-gradient(left, #4d0be6, #2bfc74, #4d0be6);
+    background: linear-gradient(to right, #4d0be6, #2bfc74, #4d0be6); 
+}
+.mainGrad_6 { /* green and dark pink */
+    background: #00ff44; 
+    background: -webkit-linear-gradient(left, #00ff44, #fc2b74, #00ff44);
+    background: -o-linear-gradient(left, #00ff44, #fc2b74, #00ff44); 
+    background: -moz-linear-gradient(left, #00ff44, #fc2b74, #00ff44);
+    background: linear-gradient(to right, #00ff44, #fc2b74, #00ff44); 
+}
+.mainGrad_7 { /* dark blue and dark pink */
+    background: #003cff; 
+    background: -webkit-linear-gradient(left, #003cff, #b80040, #003cff);
+    background: -o-linear-gradient(left, #003cff, #b80040, #003cff); 
+    background: -moz-linear-gradient(left, #003cff, #b80040, #003cff);
+    background: linear-gradient(to right, #003cff, #b80040, #003cff); 
+}
+.mainGrad_8 { /* pink and yellow */
+    background: #ff00e1; 
+    background: -webkit-linear-gradient(left, #ff00e1, #f1ff26, #ff00e1);
+    background: -o-linear-gradient(left, #ff00e1, #f1ff26, #ff00e1); 
+    background: -moz-linear-gradient(left, #ff00e1, #f1ff26, #ff00e1);
+    background: linear-gradient(to right, #ff00e1, #f1ff26, #ff00e1); 
+}
+.mainGrad_9 { /* dark pink and yellow */
+    background: #ff0059; 
+    background: -webkit-linear-gradient(left, #ff0059, #f1ff26, #ff0059);
+    background: -o-linear-gradient(left, #ff0059, #f1ff26, #ff0059); 
+    background: -moz-linear-gradient(left, #ff0059, #f1ff26, #ff0059);
+    background: linear-gradient(to right, #ff0059, #f1ff26, #ff0059); 
+}
+.mainGrad_10 { /* green and yellow */
+    background: #FDFC47; 
+    background: -webkit-linear-gradient(left, #FDFC47, #24FE41, #FDFC47);
+    background: -o-linear-gradient(left, #FDFC47, #24FE41, #FDFC47); 
+    background: -moz-linear-gradient(left, #FDFC47, #24FE41, #FDFC47);
+    background: linear-gradient(to right, #FDFC47, #24FE41, #FDFC47); 
+}
+.mainGrad_11 { /* gray and white */
+    background: #abbaab; 
+    background: -webkit-linear-gradient(left, #abbaab, #ffffff, #abbaab);
+    background: -o-linear-gradient(left, #abbaab, #ffffff, #abbaab); 
+    background: -moz-linear-gradient(left, #abbaab, #ffffff, #abbaab);
+    background: linear-gradient(to right, #abbaab, #ffffff, #abbaab); 
+}
+.mainGrad_12 { /* purple and light blue */
+    background:  #2E1437; 
+    background: -webkit-linear-gradient(left, #2E1437, #948E99, #2E1437);
+    background: -o-linear-gradient(left, #2E1437, #948E99, #2E1437); 
+    background: -moz-linear-gradient(left, #2E1437, #948E99, #2E1437);
+    background: linear-gradient(to right, #2E1437, #948E99, #2E1437); 
+}
+.mainGrad_13 { /* dark pink and light pink */
+    background:  #33001b; 
+    background: -webkit-linear-gradient(left, #33001b, #ff0084, #33001b);
+    background: -o-linear-gradient(left, #33001b, #ff0084, #33001b); 
+    background: -moz-linear-gradient(left, #33001b, #ff0084, #33001b);
+    background: linear-gradient(to right, #33001b, #ff0084, #33001b); 
+}
+/* THEMES END */
+/* THEMES END */
+/* THEMES END */
+/* header and footer end */
+/* home page content start */
+.repeaterDiv {
+    display: inline;
+}
+.repeatWrap {
+    position: relative !important;
+    display: table-cell;/* or inline-block or float */
+    overflow: hidden;
+}
+.itemContainers {
+	width:150px; 
+	height:150px; 
+	border-radius:3px; 
+	background-color:red;
+}
+.infoButtonInfo {
+	background-color:#5BC0F0; 
+	color:white;
+}
+.itemTitle {
+	word-wrap:break-word;
+	padding:5px;
+	font-size: 22px;
+    /*font-size: 5vw;*/
+}
+.timeString {
+	background-color:#7FFFD4; 
+	font-size:125%;
+}
+/* item page content start */
+/*.statsTable {
+    border: 1px solid black; 
+    width:100%;
+}
+.statsTable tr > td {
+    width:33%;
+}*/
+.ocDate {
+    font-size:115%;
+    font-weight:bold;
+}
+.itemTableRow {
+	height:50px;
+	border top:1px solid black;
+}
+.addOccurrenceTable {
+	width:100%;
+    margin-top:10px 
+}
+.addOccurrenceButton {
+    width:95%;
+    font-size:120%;
+}
+.fixed {
+    max-width: 50px;
+	min-width: 50px;
+}
+.fluid {
+	width: 100%;
+}
+.goodTable {
+	margin:15px 0px 0px 0px; 
+	width:100%;
+}
+.goodTable table table td:nth-child(1) {
+	width:10%;
+}
+.goodTable table table td:nth-child(1) i {
+	position:absolute;
+	margin-left:10%;
+}
+.goodTable table table td:nth-child(2) {
+	width:80%;
+}
+.goodTable table table td:nth-child(3) {
+	width:10%;
+}
+.goodTable table table td:nth-child(3) i {
+	position:absolute;
+	margin-right:10%;
+}
+.bodSmall {
+	max-height:300px;
+    overflow-y: scroll;
+}
+.scrollBaby {
+    height:100%;
+    display:block; 
+    overflow-y: auto; 
+}
+
+/* stats page content start */
+.statsBox {
+    display:block; 
+    margin-top:10px;
+    width:300px;
+    height:100px;
+    padding:5px;
+    text-align:center;
+    margin-left:auto; 
+    margin-right:auto;
+}
+.snextocc {
+    background-color:purple;
+    color:white;
+}
+.sfavoriteTime {
+    background-image: url("../common/images/timeOfDay.png");
+}
+.slidingPagesWrapper {
+    width:100%; 
+    min-height: 100%;
+    height:100%;
+    padding-bottom:15px;
+    overflow-y: auto;
+
+}
+.slidingPages {
+    height:100%;
+    width:100%;
+}
+.myDots {
+    margin-top:5px;
+}
+.dot {
+    display: inline-block;
+    width:10px;height:10px;
+    border-radius:6px;
+    background-color:#8999A6;
+    border:1px solid #8999A6;
+}
+.regChart {
+    max-width:300px; 
+    margin-left:auto; 
+    margin-right:auto;
+}
+.wideChart {
+    max-width:600px; 
+    margin-left:auto; 
+    margin-right:auto;
+}
+/* stats page content end */
+/* settings modal content start */
+.settingsHeaderTabs {
+    display: table;
+    width: 100%;
+}
+.settingsHeaderTabs li {
+    display: table-cell;
+    text-align:center;
+    vertical-align: middle;
+    background: #E6E6E6;
+    color: black;
+    height:50px;
+    font-size:18px;
+    width:33.33%;
+}
+
+/* settings modal content end */
+
+
+

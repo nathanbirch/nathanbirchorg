@@ -1,0 +1,24 @@
+<div ng-hide="selectedFamilyTalk">
+	<h1>Family Talks</h1>
+	<div ng-repeat="ft in familyTalks" class="famTalkRepeat">
+		<div class="famTimage">
+			<a href="" ng-click="loadSelectedTalk(ft.id)">
+				<img ng-if="ft.when" src="{{ft.img | trustAsResourceUrl}}" class="ftImg2" />
+				<p class="imgH">
+					<span ng-bind="ft.title" class="t_f30"></span><br><br>
+				</p>
+				<p class="imgH2">
+					<span ng-bind="ft.who"></span><br>
+					<span ng-bind="ft.when"></span>
+				</p>
+			</a>
+		</div>
+	</div>
+</div>
+<div ng-show="selectedFamilyTalk">
+	<h4><a href="" ng-click="returnToAllTalks()"><img class="w_40" src="constants/img/i-arrow.png"/>Go back to all talks</a></h4>
+	<h1 ng-bind="selectedFamilyTalk.title"></h1>
+
+	<p>Given by {{selectedFamilyTalk.who}} on {{selectedFamilyTalk.when}}</p>
+	<pdf-viewer datasource='selectedFamilyTalk.url'></pdf-viewer>
+</div>

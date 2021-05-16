@@ -1,0 +1,81 @@
+body {
+    background-image: url("mobileBackground.png");
+    background-color: #cccccc;
+}
+.wordImage {
+	position:absolute; 
+	width:100px;
+}
+.containerForSplatteredWords {
+	background-color:red;
+}
+.gallery{
+    position:relative;
+    background: red;
+    width: 500px;
+    height: 700px;
+}
+.picture {
+	width:100px;
+}
+/*bounce*/
+.div-bounce-in {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.div-bounce-in:active {
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.div-bounce-out {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.div-bounce-out:active {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+/*.expand-big-time {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 1s;
+  transition: all 1s;
+}
+.expand-big-time:active {
+  -webkit-transform: scale(200);
+  transform: scale(200);
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}*/
+
+
+@media screen and (min-width:701px) and (max-width:1500px) {
+    body {
+    	background-image: url("smallDesktopBackground.png");
+    }
+}
+@media only screen and (min-width: 1501px) {
+    body {
+    	background-image: url("desktopBackground.png");
+    }
+}

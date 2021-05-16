@@ -1,0 +1,1 @@
+        <button type="button" class="button blueButton wbutton" id="visibilityButton5" onClick="clearCacheReload()">Click Here to clear your cache and reload the page.</button>

@@ -1,0 +1,22 @@
+<p>Let's see if this works</p>
+
+<div>{{someVariable}}</div><br><br>
+
+<button class="btn btn-primary" ng-click="THEfunction(function1, function2, function3)">Run the barcode function</button>
+
+<div ng-show="generatedDetails">
+    <br>
+	<h1>Barcode Results</h1>
+	<table class="tb_br tb_w_full t_cent">
+		<tr>
+			<td>Total Services Being Compared</td>
+			<td>Barcode Scores</td>
+			<td>Index with highest score</td>
+		</tr>
+		<tr>
+			<td ng-bind="barcodeTypes.length"></td>
+			<td ng-bind="barcodeScores"></td>
+			<td ng-bind="indexOfMaxValue"></td>
+		</tr>
+	</table>
+</div>

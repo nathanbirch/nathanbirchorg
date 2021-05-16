@@ -1,0 +1,20 @@
+<div>
+	<h4 ng-show="searchString">Results of your search for: <span ng-bind="searchString"></span></h4>
+	<h4 ng-show="!searchString">Please search for something.</h4>
+	<div ng-show="searchString && (!searchResults || searchResults.length == 0)">&#9785;  No results found  &#9785;</div>
+	<div ng-repeat="s in searchResults | orderBy:'title'">
+		<div ng-show="s.typeIdentifier == 'q'"> 
+			<single-quote quote=s page='"search"'></single-quote>
+		</div>
+		<div ng-show="s.typeIdentifier == 'ft'"> 
+			<family-talk talk='s' page='"search"'></family-talk>
+		</div>
+		<div ng-show="s.typeIdentifier == 't'"> 
+			<single-talk talk='s' page='"search"'></single-talk>
+		</div>
+		<div ng-show="s.typeIdentifier == 'to'">
+			<single-topic topic='s' page='"search"' new-go='go("topics", s.id)'></single-topic>
+		</div>
+		<br>
+	</div>
+</div>

@@ -1,0 +1,48 @@
+[debug] [2018-01-16T13:56:44.269Z] ----------------------------------------------------------------------
+[debug] [2018-01-16T13:56:44.273Z] Command:       C:\Program Files (Nathan)\nodejs\node.exe C:\Users\TZ611W\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-01-16T13:56:44.273Z] CLI Version:   3.16.0
+[debug] [2018-01-16T13:56:44.273Z] Platform:      win32
+[debug] [2018-01-16T13:56:44.273Z] Node Version:  v8.9.1
+[debug] [2018-01-16T13:56:44.277Z] Time:          Tue Jan 16 2018 07:56:44 GMT-0600 (Central Standard Time)
+[debug] [2018-01-16T13:56:44.277Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-16T13:56:44.309Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-16T13:56:44.309Z] > authorizing via signed-in user
+[debug] [2018-01-16T13:56:44.313Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/scorepal-81b73  
+  
+ Tue Jan 16 2018 07:56:44 GMT-0600 (Central Standard Time)
+[debug] [2018-01-16T13:56:44.860Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-16T13:56:44.860Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/scorepal-81b73/tokens  
+  
+ Tue Jan 16 2018 07:56:44 GMT-0600 (Central Standard Time)
+[debug] [2018-01-16T13:56:45.268Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'scorepal-81b73'...
+[info] 
+[info] i  deploying database
+[info] i  database: checking rules syntax...
+[debug] [2018-01-16T13:56:45.588Z] >>> HTTP REQUEST PUT https://scorepal-81b73.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ 
+ Tue Jan 16 2018 07:56:45 GMT-0600 (Central Standard Time)
+[debug] [2018-01-16T13:59:19.627Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database scorepal-81b73 is valid
+[info] i  database: releasing rules...
+[debug] [2018-01-16T13:59:19.627Z] >>> HTTP REQUEST PUT https://scorepal-81b73.firebaseio.com/.settings/rules.json  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ 
+ Tue Jan 16 2018 07:59:19 GMT-0600 (Central Standard Time)
+[debug] [2018-01-16T13:59:19.752Z] <<< HTTP RESPONSE 503
+[debug] [2018-01-16T13:59:19.752Z] <<< HTTP RESPONSE BODY 
+[error] 
+[error] Error: Unexpected error while deploying database rules.

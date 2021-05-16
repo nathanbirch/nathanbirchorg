@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <button type="button" class="close" ng-click="dismiss()">&times;</button>
+  <h2 class="modal-title">Create New Item</h2>
+</div>
+<div class="modal-body">
+  <input type="text" class="form-control" ng-model="name" limit-to="25" ng-maxlength="25" placeholder="Item Name" ng-blur="checkDuplicate(name)" autofocus/>
+  <p style="color:red" ng-bind="duplicateName"></p>
+  <br><br>
+  <input type="text" class="form-control" ng-model="details" limit-to="200" placeholder="Details about Item"/>
+</div>
+<div class="modal-footer">
+  <span ng-show="name.length > 25" style="color:red">Item Name is too Long</span><br>
+  <button type="button" class="btn btn-default" ng-click="dismiss()">Close</button>
+  <button ng-show="!name || duplicateName" type="button" class="btn btn-info" style="opacity:0.5">Save Item</button>
+  <button ng-show="name && !duplicateName" type="button" class="btn btn-info" ng-click="close()">Save Item</button>
+</div>

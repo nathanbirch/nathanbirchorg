@@ -1,0 +1,105 @@
+<table class="goodTable">
+	<tr style="background-color:{{item.color}}">
+		<!-- <td data-toggle="modal" data-target="#editItemModal" ng-click="editItem()"><i class="fa fa-pencil" aria-hidden="true" style="color:blue; padding:5px"></i></td> -->
+		<td><h2><span  ng-bind="item.name"></span></h2></td>
+		<!-- <td data-toggle="modal" data-target="#deleteItemModal"><i class="fa fa-trash-o" aria-hidden="true" style="color:red; padding:5px"></i></td> -->
+	</tr>
+</table>
+
+<div ng-show="item.Occurrences.length < 2">
+	<button ng-click="go('/item')" class="btn btn-info btnTopPadding">Add Occurrences to view Stats</button>
+</div>
+
+<div ng-hide="item.Occurrences.length < 2">
+	
+	<div class="slidingPagesWrapper">
+	  <br>
+	  <div class="rn-carousel-indicator custom-indicator">
+        <span ng-repeat="slide in slides" class="ng-scope"><i class="fa fa-circle" aria-hidden="true" ng-click="changeSlideIndex($index)" ng-style="$index === $parent.carouselIndex ? {'color':item.color} : {'color':'#4D4D4F'}" style="padding:10px; font-size:20px"></i></span>
+      </div>
+
+	  <ul class="featured" rn-carousel rn-carousel-controls-allow-loop rn-carousel-index="carouselIndex" style="{{getHeight(item.Occurrences.length)}}">
+	    <li>
+	    	<h3>Time Between Occurrences</h3>
+	    	<h5>Average:&nbsp;{{avg1}}</h5>
+			<!-- <table class="table goodTable bodSmall">
+				<tr>
+					<td style="width:50%; height:auto">Average time between Occurrences</td>
+					<td style="width:50%; height:auto"><span ng-bind="avg1"></span></td>
+				</tr>
+				<tr>
+					<td style="width:50%; height:auto">Average time of day</td>
+					<td style="width:50%; height:auto"><span ng-bind="avg2"></span></td>
+				</tr>
+			</table> -->
+			<table class="table goodTable bodSmall" style="text-align:center;">
+				<thead>
+					<tr>
+						<th style="text-align:center">Elapsed Time</th>
+						<th style="text-align:center">Occurrence</th>
+					</tr>
+				</thead>
+				<tr ng-repeat="o in item.Occurrences track by $index" class="itemTableRow">
+					<td ng-bind="o.elapsed.pretty"></td>
+					<td><span class="ocDate" ng-bind="o.new"></span><p ng-bind="o.det | limitTo: 50" style="margin-bottom:0px"></p></td>
+				</tr>
+			</table>
+		</li>
+		<li ng-show="loaded">
+	    	<h3>Times of Day</h3>
+			<canvas id="doughnut" class="chart chart-doughnut regChart" chart-data="sec.data" chart-labels="sec.labels">
+			</canvas> 
+		</li>
+		<li ng-show="loaded">
+	    	<h3>Popular Weekdays</h3>
+			<canvas id="line" class="chart chart-line wideChart" chart-data="thr.data"
+				chart-labels="thr.labels" chart-series="thr.series" chart-options="thr.options"
+				chart-dataset-override="thr.datasetOverride" chart-click="onClick">
+			</canvas>
+		</li>
+		<li ng-show="loaded">
+	    	<h3>Popular Day Times</h3>
+			<canvas id="line" class="chart chart-line wideChart" chart-data="fou.data"
+				chart-labels="fou.labels" chart-series="fou.series" chart-options="fou.options"
+				chart-dataset-override="fou.datasetOverride" chart-click="onClick">
+			</canvas>
+		</li>
+		<li ng-show="loaded">
+	    	<h3>Projected Occurrences</h3>
+			<div style="width:100%; text-align:center">
+				<div class="statsBox snextocc">
+					<h4>Estimated Next Occurrence Time</h4>
+					<h3 ng-bind="proj.nextOcc"></h3>
+					<!-- Will happen {{getCountdown(proj.nextOcc)}} -->
+				</div>
+				<div class="statsBox sfavoriteTime">
+					<h4>Favorite Time of Day</h4>
+					<h3 ng-bind="proj.time"></h3>
+				</div>
+			</div>
+			<table class="table goodTable bodSmall" style="text-align:center;">
+				<thead>
+					<tr>
+						<th style="text-align:center">Based on Average Elapsed Times</th>
+					</tr>
+				</thead>
+				<tr class="itemTableRow">
+					<td><span ng-show="!proj.nextOccPassed" ng-bind="proj.avg"></span>
+						<span ng-show="proj.nextOccPassed">
+							<span>You missed the occurrence at {{proj.avg}}</span>
+							<br><br>
+							<button class="btn btn-info" style="display:inline-block;" ng-click="addStatOccurrence()">Add this occurrence from {{proj.nextOccPassed}}</button>
+						</span></td>
+					<td></td>
+				</tr>
+			</table>
+			<div>
+				See all missed occurrences
+				<p ng-repeat="o in proj.missedOccurrenceArray" ng-bind="o"></p>
+			</div>
+			<br>
+		</li>
+	  </ul>
+	</div>
+
+</div>

@@ -1,0 +1,11 @@
+<div class="modal-header" style="background-color:{{item.color}};padding:9px 15px;border-bottom:1px solid #eee;-webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;">
+  <button type="button" class="close" ng-click="dismiss()">&times;</button>
+  <h2 class="modal-title" ng-bind="item.name"></h2>
+</div>
+<div class="modal-body">
+	<strong>Are you sure you want to delete this item?</strong>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" ng-click="dismiss()">Cancel</button>
+  <button ng-show="item.name" type="button" class="btn btn-info" ng-click="close()">Yes, Delete it Please.</button>
+</div>

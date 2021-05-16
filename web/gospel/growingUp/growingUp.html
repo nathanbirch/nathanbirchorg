@@ -1,0 +1,21 @@
+<div ng-hide="selectedAge">
+	<h1>Age Groups</h1>
+	<div ng-repeat="a in ages" class="famTalkRepeat">
+		<div class="famTimage">
+			<a href="" ng-click="loadSelectedAge(a.id)">
+				<img ng-src="{{a.displayImage}}" class="ftImg2" />
+				<p class="imgH">
+					<span ng-bind="a.title" class="t_f30"></span><br><br>
+				</p>
+				<p class="imgH2">
+					<span ng-bind="a.who"></span><br>
+					<span ng-bind="a.when"></span>
+				</p>
+			</a>
+		</div>
+	</div>
+</div>
+<div ng-show="selectedAge">
+	<h4><a href="" ng-click="returnToAllAges()"><img class="w_40" src="constants/img/i-arrow.png"/>Go back to all ages</a></h4>
+	<h1 ng-bind="selectedAge.title"></h1>
+</div>

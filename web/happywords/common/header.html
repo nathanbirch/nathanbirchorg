@@ -1,0 +1,19 @@
+<div style="height:50px; width:100%; background-color:pink">
+  
+	<div style="float:left; margin-left:20px; margin-top:5px">
+		<img src="common/images/icons/back-arrow.png" ng-click="back()" style="width:50px" ng-show="location.path() != '/home'"/>
+	</div>
+	<!-- ***{{location.path()}}*** -->
+	<div style="float:right; margin-right:20px; margin-top:10px" ng-show="location.path() == '/home'">
+		  <div class="dropdown">
+		    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{selectedLanguage}}
+		    <span class="caret"></span></button>
+		    <ul class="dropdown-menu">
+		      <li ng-repeat="l in languages"><a href="" ng-click="selectLanguage($index)">{{l}}</a></li>
+		    </ul>
+		  </div>
+	</div>
+	<div style="float:right; margin-right:20px; margin-top:10px" ng-show="location.path() != '/home'">
+	    <h4 style="font-weight:bold; color:green" ng-bind="selectedLanguage"></h4>
+	</div>
+</div>

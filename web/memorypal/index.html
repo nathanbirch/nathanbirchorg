@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="memoryApp" ng-controller="AppCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="common/dependencies/jquery.min.js"></script>
+    <script src="common/dependencies/bootstrap.min.js"></script>
+    <script src="common/dependencies/angular.js"></script>
+    <script src="common/dependencies/angular-animate.min.js"></script>
+    <script src="common/dependencies/angular-ui-router.min.js"></script>
+    <script src="common/dependencies/ui-bootstrap-tpls.min.js"></script>
+    <script src="common/dependencies/angular-sanitize.js"></script>
+    <script src="common/dependencies/angular-route.min.js"></script>
+    <script src="common/dependencies/moment/angular-moment-picker.js"></script>
+    <script src="common/dependencies/moment/moment-with-locales.js"></script>
+    <script src="common/dependencies/ngStorage.js"></script>
+    <script src="common/dependencies/moment.js"></script>
+    <script src="common/dependencies/chart.js"></script>
+    <script src="common/dependencies/angular-sortable-view.min.js"></script>
+    <script src="common/dependencies/angular-chart.js"></script>
+    <script src="common/dependencies/angular-drag-and-drop-lists.min.js"></script>
+    <script src="common/dependencies/angular-chart.min.js"></script>
+    <script src="common/dependencies/angular-carousel/angular-touch.min.js"></script>
+    <script src="common/dependencies/angular-carousel/angular-carousel.min.js"></script>
+    <script src="common/dependencies/jscolor.min.js"></script>
+    <script src="common/dependencies/ng-cordova.js"></script>
+    <script src="common/dependencies/cordova.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/angular.chartjs/1.0.3/angular-chart.min.js.map"></script> -->
+
+    <script src="app.js"></script>
+    <script src="common/dependencies/myFileReader.js"></script>
+    <script src="common/modals/settingsCtrl.js"></script>
+    <script src="home/modals/addItemCtrl.js"></script>
+    <script src="home/modals/deleteAllCtrl.js"></script>
+    <script src="item/modals/addOccurrenceCtrl.js"></script>
+    <script src="item/modals/deleteItemCtrl.js"></script>
+    <script src="item/modals/editItemCtrl.js"></script>
+    <script src="item/modals/editOccurrenceCtrl.js"></script>
+    <script src="item/modals/singleOccurrenceCtrl.js"></script>
+
+    <script src="home/HomeCtrl.js"></script>
+    <script src="item/ItemCtrl.js"></script>
+    <script src="stats/statsCtrl.js"></script>
+    <script src="common/myDirectives.js"></script>
+
+
+
+    <link rel="stylesheet" href="common/dependencies/bootstrap.min.css">
+    <link rel="stylesheet" href="common/dependencies/nga.min.css">
+    <link rel="stylesheet" href="common/dependencies/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="common/dependencies/moment/angular-moment-picker.css">
+    <link rel="stylesheet" href="common/dependencies/angular-carousel/angular-carousel.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+</head>
+<body>
+
+    <div ui-view="header" autoscroll="false"></div>
+    <main ui-view="main" class="mainDiv" autoscroll="false"></main>
+    <div ui-view="footer" autoscroll="false"></div>
+
+</body>
+ 
+</html>

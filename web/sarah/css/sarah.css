@@ -1,0 +1,558 @@
+html {
+/*    background: -webkit-linear-gradient(left bottom, black , #b0b0b0, black);  For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(top right, black, #b0b0b0, black);  For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(top right, black, #b0b0b0, black);  For Firefox 3.6 to 15 
+    background: linear-gradient(to top right, black , #b0b0b0, black);  Standard syntax (must be last) 
+    width:100%;
+    height:100%;
+    min-height:100%;*/
+}
+body {
+    background-image: url("wedding9.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+/*    background: -webkit-linear-gradient(left bottom, black , #b0b0b0, black);  For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(top right, black, #b0b0b0, black);  For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(top right, black, #b0b0b0, black);  For Firefox 3.6 to 15 
+    background: linear-gradient(to top right, black , #b0b0b0, black);  Standard syntax (must be last) 
+    width:100%;*/
+    height:100%;
+    min-height:100%;
+}
+main {
+    padding: 0 0 100px;
+    position: relative;
+}
+/*#main-wrapper {
+    padding: 0 0 100px;
+    position: relative;
+}*/
+.blogEntryContainer {
+    left:0;
+    right:0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.blogEntry {
+    width:90%; 
+    height:500px; 
+    background-color:white;
+    resize:both;
+}
+.blogTitle {
+    text-align:center;
+    width:60%;
+    word-wrap: break-word;
+}
+.blogDate {
+    font-size:x-small;
+}
+.entryOptions {
+    width:80%;
+}
+.crumb {
+  background-color:255, 255, 255, 125;
+  margin-bottom: 2px auto;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+/*  border-left: 2px solid white;
+  border-right: 2px solid white;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;*/
+/*  background-position: 0 0, 0 100% ;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;*/
+/*  background-image: -webkit-linear-gradient(left, white 0%, #69C869 70%), -webkit-linear-gradient(left, white 0%, #69C869 70%);
+  background-image: -moz-linear-gradient(left, white 0%, #69C869 70%), -moz-linear-gradient(left, white 0%, #69C869 70%);
+  background-image: -o-linear-gradient(left, white 0%, #69C869 70%), -o-linear-gradient(left, white 0%, #69C869 70%);
+  background-image: linear-gradient(to right, white 0%, #69C869 70%), linear-gradient(to right, white 0%, #69C869 70%);*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 125)), to(rgba(255, 255, 255, 0)));
+}
+.crumbP {
+    color:black;
+    font-size:115%;
+}
+.crumbC {
+    color:black;
+    font-size:115%;
+}
+.abpic {
+     width:250px; 
+     float:left;
+     border:2px solid black;
+     border-radius: 5px;
+}
+.theBottom {
+    //position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width:200px;
+    max-height: 130px;
+    left:0;
+    right:0;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.theTop {
+    padding-top:20px; 
+    text-align: center;
+    min-width:200px;
+}
+table.headerTable {
+    width:100%;
+}
+table.headerTable td:nth-child(odd){
+    width:20%;
+}
+table.headerTable td:nth-child(even){
+    width:60%;
+}
+table.registerTable td:nth-child(even){
+  padding-left:80px;
+}
+.verticalCenterContainer {
+    position: relative;
+    height:100%;
+}
+.verticalCenterChild {
+    margin: 0;
+    position: absolute;              
+    top: 50%;                        
+    transform: translate(0, -50%); 
+}
+.registerTable {
+  width:400px;
+  margin-bottom:50px;
+}
+.backDropGradient {
+    padding-top: 0px; 
+    padding-bottom: 10px; 
+    border-radius:15px; 
+    min-width:200px;
+/*    background-color:white; */
+    width:100%;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100&amp;0.85+0,0.2+50,0.85+99 */
+        background: -moz-linear-gradient(top,  rgba(255,255,255,0.85) 0%, rgba(246,246,246,0.24) 47%, rgba(245,245,245,0.2) 50%, rgba(237,237,237,0.85) 99%, rgba(237,237,237,0.85) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.85)), color-stop(47%,rgba(246,246,246,0.24)), color-stop(50%,rgba(245,245,245,0.2)), color-stop(99%,rgba(237,237,237,0.85)), color-stop(100%,rgba(237,237,237,0.85))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ffffff', endColorstr='#d9ededed',GradientType=0 ); /* IE6-9 */
+
+}
+.backDrop {
+    padding-top: 0px; 
+    padding-bottom: 10px; 
+    border-radius:15px; 
+    background-color:white; 
+    width:100%;
+    
+    min-width:200px;
+/*    border: 5px solid #006C00;*/
+/* This will give you 50% opacity while the content of the box will continue to have 100% opacity. */
+    background:rgba(255,255,255,0.5);
+}
+.backDropL {
+    margin-left: 5%; 
+    padding-bottom: 10px; 
+    border-radius:15px; 
+    background-color:white;
+    min-width:150px;
+    width: 100%;
+/*    border: 5px solid #006C00;*/
+/* This will give you 50% opacity while the content of the box will continue to have 100% opacity. */
+    background:rgba(255,255,255,0.5);
+}
+.backDropGradientL {
+    //margin-left: 5%; 
+    text-align: center;
+    padding-bottom: 10px; 
+    border-radius:15px; 
+    margin-top:20px; 
+    margin-left:20px;
+    min-width:150px;
+    background-color:white; 
+    width: 90%;
+/*    border: 5px solid #006C00;*/
+        background: -moz-linear-gradient(top,  rgba(255,255,255,0.85) 0%, rgba(246,246,246,0.24) 47%, rgba(245,245,245,0.2) 50%, rgba(237,237,237,0.85) 99%, rgba(237,237,237,0.85) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.85)), color-stop(47%,rgba(246,246,246,0.24)), color-stop(50%,rgba(245,245,245,0.2)), color-stop(99%,rgba(237,237,237,0.85)), color-stop(100%,rgba(237,237,237,0.85))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ffffff', endColorstr='#d9ededed',GradientType=0 ); /* IE6-9 */
+}
+.backDropR {
+    padding-bottom: 10px; 
+    border-radius:15px; 
+    background-color:white; 
+    width: 100%;
+/*    border: 5px solid #006C00;*/
+/* This will give you 50% opacity while the content of the box will continue to have 100% opacity. */
+    background:rgba(255,255,255,0.5);
+}
+.backDropGradientR {
+    //margin-right: 5%; 
+    text-align: center;
+    padding-bottom: 10px; 
+    border-radius:15px; 
+    background-color:white; 
+    min-width:200px;
+    min-width:150px;
+    width: 90%;
+/*    border: 5px solid #006C00;*/
+        background: -moz-linear-gradient(top,  rgba(255,255,255,0.85) 0%, rgba(246,246,246,0.24) 47%, rgba(245,245,245,0.2) 50%, rgba(237,237,237,0.85) 99%, rgba(237,237,237,0.85) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.85)), color-stop(47%,rgba(246,246,246,0.24)), color-stop(50%,rgba(245,245,245,0.2)), color-stop(99%,rgba(237,237,237,0.85)), color-stop(100%,rgba(237,237,237,0.85))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ffffff', endColorstr='#d9ededed',GradientType=0 ); /* IE6-9 */
+}
+.contents {
+   // width: 50%; 
+    margin: 0 auto;
+}
+.Nav {
+    margin-right: auto;
+    margin-left: auto;
+    max-width:40%;
+    margin-top:20px;
+    padding-bottom: 20px; 
+    border-radius:15px; 
+    background-color:white; 
+/* This will give you 50% opacity while the content of the box will continue to have 100% opacity. */
+    background:rgba(255,255,255,0.5);
+}
+.NavGradient {
+    margin-right: auto;
+    margin-left: auto;
+    max-width:80%;
+    margin-top:20px;
+    padding-bottom: 20px; 
+    border-radius:15px; 
+        background: -moz-linear-gradient(top,  rgba(255,255,255,0.85) 0%, rgba(246,246,246,0.24) 47%, rgba(245,245,245,0.2) 50%, rgba(237,237,237,0.85) 99%, rgba(237,237,237,0.85) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.85)), color-stop(47%,rgba(246,246,246,0.24)), color-stop(50%,rgba(245,245,245,0.2)), color-stop(99%,rgba(237,237,237,0.85)), color-stop(100%,rgba(237,237,237,0.85))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(255,255,255,0.85) 0%,rgba(246,246,246,0.24) 47%,rgba(245,245,245,0.2) 50%,rgba(237,237,237,0.85) 99%,rgba(237,237,237,0.85) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ffffff', endColorstr='#d9ededed',GradientType=0 ); /* IE6-9 */
+}
+.searchBox {
+    width:100px;
+}
+.wbutton {
+    min-width:125px;
+}
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+.logBut {
+    width:30%;
+    height:15%;
+    background-color:#3399FF;
+    font-family:Lato;
+    color:white;
+    font-size:40px;
+    border-radius:0px;
+    margin-top:28%; margin-left:68%;
+    opacity:0;
+    position:absolute;
+}
+.logButRun {
+    margin-top:2%; margin-left:2%;
+    opacity:0;
+    -webkit-animation-name: animateLoginButton; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+    animation-name: animateLoginButton;
+    animation-duration: 3s;
+}
+.logButRun2 {
+    opacity:1;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animateLoginButton {
+    0%   {margin-top:28%; margin-left:68%;opacity:0;}
+    100% {margin-top:2%; margin-left:2%;opacity:1;}
+}
+/* Standard syntax */
+@keyframes animateLoginButton {
+    0%   {margin-top:28%; margin-left:68%;opacity:0;}
+    100% {margin-top:2%; margin-left:2%;opacity:1;}
+}
+.regBut {
+    width:30%;
+    height:15%;
+    background-color:#3399FF;
+    font-family:Lato;
+    color:white;
+    font-size:40px;
+    border-radius:0px;
+    margin-top:2%; 
+    margin-left:68%;
+    opacity:0;
+    position:absolute;
+}
+.regButRun {
+    margin-top:27%; margin-left:2%;
+    opacity:0;
+    -webkit-animation-name: animateRegisterButton; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+    animation-name: animateRegisterButton;
+    animation-duration: 3s;
+}
+.regButRun2 {
+    opacity:1;
+    margin-top:2%; 
+    margin-left:68%; 
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animateRegisterButton {
+    0%     {margin-top:27%; margin-left:2%; opacity:0;}
+    100%   {margin-top:2%; margin-left:68%; opacity:1;}
+}
+/* Standard syntax */
+@keyframes animateRegisterButton {
+    0%     {margin-top:27%; margin-left:2%; opacity:0;}
+    100%   {margin-top:2%; margin-left:68%; opacity:1;}
+}
+.aboutBut {
+    width:30%;
+    height:15%;
+    background-color:#00CC66;
+    font-family:Lato;
+    color:white;
+    font-size:40px;
+    border-radius:0px;
+    margin-top:-30%; 
+    margin-left:35%;
+    opacity:0;
+    position:absolute;
+}
+.aboutButRun {
+    margin-top:14%; margin-left:35%;
+    opacity:0;
+    -webkit-animation-name: animateAboutButton; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+    animation-name: animateAboutButton;
+    animation-duration: 3s;
+}
+.aboutButRun2 {
+    opacity:1;
+    margin-top:14%; 
+    margin-left:35%; 
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animateAboutButton {
+    0%     {margin-top:-30%; margin-left:35%; opacity:0;}
+    100%   {margin-top:14%; margin-left:35%; opacity:1;}
+}
+/* Standard syntax */
+@keyframes animateAboutButton {
+    0%     {margin-top:-30%; margin-left:35%; opacity:0;}
+    100%   {margin-top:14%; margin-left:35%; opacity:1;}
+}
+.mobileContainer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media only screen and (max-device-width: 1400px) {
+    .testing1 {
+        padding-left:5%;
+    }
+}
+@media only screen and (max-device-width: 1300px) {
+    .changeWidth {
+        padding-left:5%;
+        margin-right:5%;
+        max-width:50%;
+    }
+}
+@media only screen and (max-device-width: 1200px) {
+    .testing1 {
+        padding-left:5%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+        .backDropGradientL {
+        margin-left:5%;
+        max-width:90%;
+        }
+    .backDropGradientR {
+        margin-left:5%;
+        max-width:90%;
+    }
+    .backDropGradient {
+        margin-left:5%;
+        max-width:90%;
+    }
+    .desktop-break {
+        display:none;
+    }
+            .changeWidth {
+/*        padding-left:15%;
+        margin-right:15%;*/
+        max-width:80%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .changeWidth {
+/*        padding-left:15%;
+        margin-right:15%;*/
+        max-width:95%;
+    }
+    .test2 {
+        padding-right: 4%;
+/*        width:80%;*/
+    }
+    .regBut {
+        width:8%;
+        height:7%;
+        font-size:13px;
+    }
+    .logBut {
+        width:8%;
+        height:7%;
+        font-size:13px;
+    }
+    .aboutBut {
+        width:8%;
+        height:7%;
+        font-size:13px;
+    }
+    .headerTable {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-break {
+        display:none;
+    }
+    .headerTableMobile {
+        display:none;
+    }
+    .mobileContainer {
+/*        padding-right: 0px;
+        padding-left: 0px;*/
+/*        margin-right: length;
+        margin-left: length;*/
+    }
+
+}
+@media only screen and (min-width: 785px) {
+    .test2 {
+        margin-left: 3%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .test2 {
+        margin-left: 5%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 850px) {
+    .test2 {
+        margin-left: 7%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .test2 {
+        margin-left: 10%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 950px) {
+    .test2 {
+        margin-left: 13%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .test2 {
+        margin-left: -5%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 1050px) {
+    .test2 {
+        margin-left: 0%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .test2 {
+        padding-left: 0%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .test2 {
+        padding-left: 3.5%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .test2 {
+        padding-left: 5.5%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .test2 {
+        padding-left: 9%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .test2 {
+        padding-left: 13%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    .test2 {
+        padding-left: 15%;
+        padding-right: 10%;
+        width:80%;
+    }
+}
+

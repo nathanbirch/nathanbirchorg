@@ -1,0 +1,6 @@
+
+<div id="visibilityButton2">This button was generated with AJAX.</div> <br>
+
+<button type="button" id="visibilityButton3" class="button blueButton wbutton" onClick="loadDoc2()">Click here to see more.</button>
+
+<br><br>

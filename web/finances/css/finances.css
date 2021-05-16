@@ -1,0 +1,69 @@
+body {
+	background-color:#2570C2;
+}
+.mainBoard {
+	height:85vh;
+	background-color:white;
+	border: 1px solid #CCFFCC;
+}
+.navArrow {
+	position:absolute;
+	background-position: center; 
+	background-repeat:no-repeat;
+	background-image:url("/finances/img/navArrow.png");
+	background-size: 30px 58px;
+	margin-bottom:-10px;
+	background-color:#222222;
+	width:auto;
+	height:auto;
+}
+.centMe {
+	margin: 0 auto;
+}
+.centMeOut {
+	margin:0 175px;
+}
+.centMeIn {
+	// width: calc(100% - 175px);
+	// margin-left:175px;
+}
+.tb_loan td { 
+	padding-top:10px;
+}
+.tb_loan th, td { 
+	vertical-align: top; 
+}
+.w-full {
+	width:100%;
+}
+.w-wide {
+	width:150%;
+}
+.b-top {
+	margin-top:30px;
+}
+.output { 
+	font-weight: bold; 
+}  
+.hiddenTestButton {
+    position: fixed;
+    bottom: 0;
+    height:50px;
+    width:25px;
+}
+#graph { 
+	border: solid black 1px; 
+}
+@media only screen and (max-width: 767px) {
+    .navArrow {
+      display:none;
+    }
+		.navTitle2 {
+			display:none;
+		}
+}
+@media only screen and (min-width: 768px) {
+    .navTitle {
+        display:none;
+    }
+}

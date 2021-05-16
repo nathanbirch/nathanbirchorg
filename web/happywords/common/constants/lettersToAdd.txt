@@ -1,0 +1,10 @@
+Stuff to do:
+
+--get images to not land on top of letter 
+	-- half way works, it will never get pictures in the top left side of it. 
+	-- This is because the width and height is different from the rest of the images. 
+	-- height is set at 120px and width varies, others are 100px X 100px
+
+
+--add audio for all words
+--add audio for all letters

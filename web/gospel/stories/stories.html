@@ -1,0 +1,36 @@
+<div ng-hide="selectedStory">
+	<h1>Welcome to the Stories Page</h1>
+	<div ng-repeat="story in stories" style="float:left; margin-right:2%; margin-bottom:2%">
+		<div class="image">
+			<a href="" ng-click="loadSelectedstory(story.id)">
+				<img src="{{story.img | trustAsResourceUrl}}" style="width:300px" />
+				<p class="imgH">
+					<span ng-bind="story.title" style="font-size:30px;"></span><br><br>
+				</p>
+				<p class="imgH2">
+					<span ng-bind="story.description"></span><br>
+				</p>
+			</a>
+		</div>
+	</div>
+</div>
+<div ng-show="selectedStory">
+	<h4><a href="" ng-click="returnToAllStories()"><img src="constants/img/i-arrow.png" style="width:50px"/>Go back to all stories</a></h4>
+	<h1 ng-bind="selectedStory.title"></h1>
+
+	<h5 ng-bind="selectedStory.description"></h5>
+
+<!-- 	<div class="oneThird" ng-show="selectedStory.relatedQuotes.length > 0">
+		<span>Related Quotes:</span><br>
+		<div ng-repeat="sq in selectedStory.relatedQuotes"><span ng-bind="quotes[sq].what | limitTo: 50"></span></div>
+	</div>
+	<div class="oneThird" ng-show="selectedStory.relatedTopics.length > 0">
+		<span>Related Topics:</span><br>
+		<div ng-repeat="st in selectedStory.relatedTopics"><a href="" ng-click="go('/topics', topics[st].id)" ng-bind="topics[st].top"></a></div>
+	</div>
+	<div class="oneThird" ng-show="selectedStory.relatedTalks.length > 0">
+		<span>Related Talks:</span><br>
+		<div ng-repeat="sta in selectedStory.relatedTalks"><a href="talks[sta].url" target="_blank" ng-bind="talks[sta].title"></a></div>
+	</div> -->
+	<pdf-viewer datasource='selectedStory.url'></pdf-viewer>
+</div>

@@ -1,0 +1,41 @@
+<!-- <form id="login" target="frame" method="post" action="https://www.vipkidteachers.com/login">
+    <input type="hidden" name="username" value="nathantbirch@gmail.com" />
+    <input type="hidden" name="password" value="December2013" />
+</form>
+
+<iframe id="frame" name="frame" class="myF"></iframe> -->
+<style>
+	.myF {
+		width:100%; 
+		height:600px;
+	}
+</style>
+<script type="text/javascript">
+    setTimeout(function(){ 
+		var iframe = document.getElementById('iframeId');
+		var innerDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
+
+		var ulObj = innerDoc.getElementsByName("username");
+		alert(ulObj);
+    }, 3000);
+
+	// window.load(function(){
+	//    $('#InnerIframe').contents().getElementByName("username").trigger( "click" );
+	//    // $('#InnerIframe').contents().getElementsByClassName("signin-btn")[0].trigger( "click" );
+	//    // $('#InnerIframe').contents().find('sub-btn js-signin-btn').trigger( "click" );
+	// });
+    // submit the form into iframe for login into remote site
+    // document.getElementById('login').submit();
+
+    // // once you're logged in, change the source url (if needed)
+    // var iframe = document.getElementById('frame');
+    // iframe.onload = function() {
+    //     if (iframe.src != "https://www.vipkidteachers.com") {
+    //         iframe.src = "https://www.vipkidteachers.com";
+    //     }
+    // }
+</script>
+
+
+
+<iframe src="https://www.vipkidteachers.com/login" id="iframeId" class="myF"></iframe>

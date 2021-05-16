@@ -1,0 +1,355 @@
+// ***********************************************************
+// ********************* NATHAN UI BEGIN *********************
+// ***********************************************************
+
+// ***********************************
+// ********** Page Content ***********
+// ***********************************
+.app {
+  max-width:100px;
+  position:absolute;
+}
+.appT {
+  position:relative;
+}
+.app-content {
+  width:80%;
+  margin-left:10%;
+}
+
+
+// ***********************************
+// ********** TEXT CLASSES ***********
+// ***********************************
+.t_cent {
+	text-align:center !important;
+}
+.t_1b {
+	font-size:110%;
+}
+.t_b {
+	font-weight: bold;
+}
+.t_f30 {
+  font-size:30px;
+}
+// ***********************************
+// ********** INPUT CLASSES **********
+// ***********************************
+a {
+  cursor:pointer;
+}
+
+// ***********************************
+// ********** TABLE CLASSES **********
+// ***********************************
+.tb_br {
+  border: 1px solid black;
+}
+.tb_w_full {
+  width:100%;
+}
+
+// ***********************************
+// ********* Generic CLASSES *********
+// ***********************************
+
+// ***********************************************************
+// ********************** NATHAN UI END **********************
+// ***********************************************************
+
+.jumbotron {
+    position: relative;
+    background: #000 url("http://www.ldschurchtemples.com/spokane/gallery/images/spokane-mormon-temple1.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+ 
+.topScroll::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+ 
+.topScroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3); 
+    border-radius: 10px;
+}
+ 
+.topScroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 3px 3px 6px rgba(99,167,237,0.6); 
+}
+.topScroll::-webkit-scrollbar-corner {
+    background-color:black;
+}
+#headerDiv {
+    padding-left: 0px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#fadeTogID {
+     opacity:1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+}
+#headerDiv.pushMeBaby {
+    padding-left: 50px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#fadeTogID.fadeTog {
+     opacity:0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+}
+
+.noPhone {
+  display:normal;
+}
+/* home.html classes start */
+.jumbotron {
+    position: relative;
+    background: #000 url("http://www.ldschurchtemples.com/spokane/gallery/images/spokane-mormon-temple1.jpg") center center;
+    width: 120%;
+    height: 100%;
+    margin-left:-10%;
+    background-size: cover;
+    overflow: hidden;
+    text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+}
+.mainTileContainer {
+  width:100%;
+}
+.mainTile {
+  /*width:43%; */
+  border:1px solid #808080; 
+  border-radius:10px;
+  padding:10px;
+}
+.fl {
+  float:left;
+}
+.fr {
+  float:right;
+}
+.s75p {
+  size:75%;
+}
+/* home.html classes end */
+/* topics.html classes start */
+.jumron {
+  position: relative;
+  background: #000 url("") center center;
+  width: 100%;
+  height: 80%;
+  /*margin-left:-10%;*/
+  background-size: cover;
+  overflow: hidden;
+}
+.image { 
+  position: relative; 
+  width: 100%;
+}
+.imgH { 
+  position: absolute; 
+  top: 0px; 
+  left: 30px; 
+  width: 100%; 
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+}
+.topicContents {
+  width:100%;
+  height:auto;
+  margin:auto;
+}
+.oneThird {
+  width:33%;
+  float:left;
+  padding:.5%;
+
+}
+.tSub {
+  font-size:75%;
+  font-style:italic;
+  margin-top:-50px;
+  width:90%;
+  margin-left:5%;
+  /*white-space: pre-wrap;*/
+}
+.topSel {
+  display:normal;
+}
+.topSelN {
+  display:none;
+}
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cssSlideUp {
+  transition: .5s linear all;
+  height: auto;
+  overflow: hidden;
+}
+.prim {
+  list-style-type:none; 
+  padding:10px; 
+}
+.borderClass {
+  padding-bottom:10px;border-bottom:1px solid black;
+}
+h3 {
+  text-align:center;
+  padding-bottom:5px;
+  border-bottom:1px solid black;
+} 
+/* topics.html classes end */
+/* search.html classes start */
+.tSub {
+  font-size:75%;
+  font-style:italic;
+  margin-top:-50px;
+  width:90%;
+  margin-left:5%;
+  /*white-space: pre-wrap;*/
+}
+.tdn {
+  text-decoration:none;
+}
+.fs150 {
+  font-size:150%;;
+}
+.highlighted {  background:yellow;  }
+/* search.html classes end */
+/* famTalks.html classes start */
+.ftImg2 {
+  width:300px;
+}
+.famTalkRepeat {
+  float:left; 
+  margin-right:2%; 
+  margin-bottom:2%;
+}
+.famTimage { 
+   position: relative; 
+   width: 300px;
+   margin-top:2%;
+   margin-left:2%;
+}
+.weekTimage { 
+   position: relative; 
+   width: 90%;
+   margin-left:5%;
+   margin-top:2%;
+}
+
+.imgH { 
+  position: absolute; 
+  top: 0px; 
+  left: 15px; 
+  width: 270px; 
+  color:black;
+  font-size:20px;
+  text-decoration:none;
+  word-wrap: break-word;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+}
+.imgH2 {
+  position: absolute; 
+  bottom: 0px; 
+  left: 15px; 
+  width: 270px; 
+  color:black;
+  font-size:20px;
+  text-decoration:none;
+  word-wrap: break-word;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+}
+.imgText { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+.w_40 {
+  width:40px;
+}
+.bFontz {
+  font-size:150%;
+}
+/* famTalks.html classes end */
+/* directive classes start */
+.quote-to-show {
+  position: relative;
+  /*height: auto;*/
+  -webkit-transition: top linear 1.5s;
+  transition: top linear 1.5s;
+  top: 0;
+}
+.quote-to-show.ng-hide {
+  /*top: -100px;*/
+}
+.homePg1 {
+  margin-right:5%; 
+  width:28%;
+}
+.homePg3 {
+  margin-left:5%; 
+  width:28%;
+}
+.quote-to-show.ng-hide-add,
+.quote-to-show.ng-hide-remove {
+  display: block!important;
+}
+/* directive classes end */
+/* media queries start */
+@media screen and (max-width: 1200px) {
+  .mainTile {
+    border:none; 
+    border-radius:0px;
+  }
+  .homePg1 {
+    margin-right:inherit;
+    width:inherit;
+  }
+  .homePg3 {
+    margin-left:inherit; 
+    width:inherit;
+  }
+}
+@media screen and (max-width: 960px) {
+  .oneThird {
+    width:85%;
+    margin-left:7.5%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .image {
+    width:90%;
+  }
+  .oneThird {
+    width:90%;
+    margin-left:0%;
+  }
+  .borderClass {
+    width:90%;
+  }
+  .noPhone {
+      display:none;
+  }
+}  
+/* media queries end */
+
+

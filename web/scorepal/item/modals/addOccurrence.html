@@ -1,0 +1,38 @@
+<div class="modal-header" style="background-color:{{item.color}};padding:9px 15px;border-bottom:1px solid #eee;-webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;">
+  <button type="button" class="close" ng-click="dismiss()">&times;</button>
+  <h2 class="modal-title" ng-bind="item.name"></h2>
+</div>
+<div class="modal-body">
+	<h3 style="margin-top:-10px">Add New Occurrence</h3>
+	<div ng-show="!occurrenceCreationObj.datepicker">
+			<h4>When did this happen?</h4>
+			<div ng-hide="dontShowCurrentTime">
+				<p ng-bind="setCurrentTime()" style="font-size:150%; margin-bottom:0px"></p>
+				<br>OR<br>
+			</div>
+		</div>
+			<input class="form-control"
+			       ng-click="clearTimeObject()"
+				   format="L LT"
+			       ng-model="occurrenceCreationObj.input"
+			       today="true"
+			       max-date="getToday()"
+			       ng-model-options="{ updateOn: 'blur' }"
+			       placeholder="Select a date and time..."
+			       moment-picker="occurrenceCreationObj.input">
+		<br>
+		
+		<input type="text" class="form-control" ng-model="instanceDetails" limit-to="200" placeholder="Details about this Instance"/><br><br>
+		
+	  	<input type="file" id="addImga" class="hidden" ng-file-select="onFileSelect($files)">
+		<label for="addImga" class="btn btn-info">
+			<span ng-hide="instanceImage">Add Image to Occurrence</span>
+			<span ng-show="instanceImage">Edit Image</span>
+		</label>
+		<img ng-src="{{instanceImage}}" style="max-width:100%;" />
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" ng-click="dismiss()">Cancel</button>
+  <button ng-show="item.name" type="button" class="btn btn-info" ng-click="close(occurrenceCreationObj, occurrenceCreationObj.details)">Save</button>
+</div>

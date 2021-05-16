@@ -1,0 +1,8 @@
+<form name="myForm" confirm-on-exit>
+    myModel.text: <input name="input" ng-model="myModel.text">
+    <p>myModel.text = {{myModel.text}}</p>
+    <p>$pristine = {{myForm.$pristine}}</p>
+    <p>$dirty = {{myForm.$dirty}}</p>
+</form>
+
+<button ng-click="submit()">Save Changes</button>

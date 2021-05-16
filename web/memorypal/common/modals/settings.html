@@ -1,0 +1,75 @@
+<div class="modal-header" ng-class="setTempTheme" style="border-radius:5px 5px 0 0;">
+  <button type="button" class="close" ng-click="dismiss()">&times;</button>
+  <h2 class="modal-title">Settings</h2>
+</div>
+
+<div class="rn-carousel-indicator custom-indicator" style="width:100%; margin-left:5px;">
+  <ul class="list-inline settingsHeaderTabs">
+    <li ng-style="carouselIndex === 0 ? {'background-color':'#3B40E6'} : {'background-color':'#C5C5C5'}" ng-click="changeSlideIndex(0)">Themes</li>
+    <li ng-style="carouselIndex === 1 ? {'background-color':'#3B40E6'} : {'background-color':'#C5C5C5'}" ng-click="changeSlideIndex(1)">Rearrange</li>
+    <li ng-style="carouselIndex === 2 ? {'background-color':'#3B40E6'} : {'background-color':'#C5C5C5'}" ng-click="changeSlideIndex(2)">Notifications</li>
+    <hr/>
+  </ul>
+</div>
+
+<div class="modal-body">
+
+  <div class="slidingPagesWrapper">
+    <br>
+
+    <ul class="featured" rn-carousel rn-carousel-controls-allow-loop rn-carousel-index="carouselIndex" style="height:350px; overflow-y:hidden;margin-top:-20px">
+      <li>
+        <div class="scrollBaby" id="themes">
+          <div class="scrollBaby">
+            <div class="bodSmall">
+              <div ng-repeat="t in themes">
+                <div ng-click="changeTheme(t)">
+                  <div style="width: 90%; height:30px; margin:10px; text-align: center; margin-left:auto; margin-right:auto; border-radius:10px" ng-class="getTheme(t)">
+                    <p class="titleFake">MEMORY PAL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <h4 style="text-align: center;">Drag and drop the items below to re-order them.</h4>
+        <div class="scrollBaby" id="rearrange">
+          <div ng-show="tempItems.length > 0" sv-root sv-part="tempItems" class="bodSmall">
+            <div ng-repeat="i in tempItems" sv-element="opts">
+              <div>
+                <div style="width:80%; height:20px; margin-left: 10%; margin-bottom:5px; border-radius:5px; vertical-align:top; display: table; background-color:{{i.color}}; text-align: center; line-height:.75" ng-click="go('/item', i.itemId)">
+                  <p ng-bind="i.name" class="itemTitle" style=" word-wrap:break-word;"></p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <!-- <h3>Notifications</h3> -->
+        <div id="notifications">
+          No notifications are available at this time.
+          <!-- <div style="text-align:center">
+                <h3>Change Notification Settings</h3>
+            <ion-content ng-controller="AppCtrl">
+                <button type="button" class="btn btn-info" ng-click="add()">Add notification</button>
+                <button type="button" class="btn btn-info" ng-click="isScheduled()">Is Scheduled</button>
+            </ion-content>       
+          </div> -->
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+
+
+
+
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" ng-click="dismiss()">Cancel</button>
+  <button type="button" class="btn btn-info" ng-click="close(setTempTheme, true)">Save Changes</button>
+</div>

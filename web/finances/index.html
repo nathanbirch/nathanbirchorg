@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/finances.css" rel="stylesheet" type="text/css" media="screen">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="scotchController.js"></script>
+    <script src="homePageModules/HomeListCtrl.js"></script>
+    <script src="loan/LoanCtrl.js"></script>
+    <script src="mortgage/MortgageCtrl.js"></script>
+    <script src="spending/SpendingCtrl.js"></script>
+    <script src="testing/TestingCtrl.js"></script>
+    <!-- <script src="interest/InterestCtrl.js"></script> -->
+    <script src="planning/PlanningCtrl.js"></script>
+    <script src="common/myDirectives.js"></script>
+</head>
+<body ng-app="financesApp" ng-controller="AppCtrl">
+    <nav class="navbar navbar-inverse" role="navigation" style="border-bottom:0px; border-radius:0px;">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Birch Finances</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav" auto-active>
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="loan">Loan Calculator</a></li>
+            <li><a ui-sref="mortgage">Mortgage Calculator</a></li>
+            <li><a ui-sref="planning">Planning</a></li>
+            <li><a ui-sref="spending">Spending</a></li>
+            <li><a ui-sref="about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mainBoard"><div ui-view></div></div>
+    <a class="hiddenTestButton" ui-sref="testing"></a>
+</body>
+</html>

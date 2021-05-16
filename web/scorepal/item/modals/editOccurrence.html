@@ -1,0 +1,32 @@
+<div class="modal-header" style="background-color:{{item.color}};padding:9px 15px;border-bottom:1px solid #eee;-webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;">
+  <button type="button" class="close" ng-click="dismiss()">&times;</button>
+  <h2 class="modal-title">Edit Occurrence</h2>
+</div>
+<div class="modal-body">
+	<input class="form-control"
+		   format="LLL"
+	       ng-model="originalOccurrence.input"
+	       ng-model-options="{ updateOn: 'blur' }"
+	       placeholder="Select a date..."
+	       moment-picker="originalOccurrence.input">
+	<br><br>
+
+	<div ng-show="!originalOccurrence.img">
+		<input type="file" id="addFiles" class="hidden" ng-file-select="onFileSelect($files)">
+		<label for="addFiles" class="btn btn-info">Add Image</label>
+	</div>
+	<div ng-show="originalOccurrence.img">
+		<img ng-src="{{originalOccurrence.img}}" style="max-width:100%;" />
+	    <input type="file" id="editFiles" class="hidden" ng-file-select="onFileSelect($files)">
+	    <label for="editFiles" class="btn btn-info">Edit Image</label><label class="btn btn-danger" style="float:right" ng-click="removeImg()">Remove Image</label>
+	</div>
+  	<br><br>
+
+	<input type="text" class="form-control" ng-model="originalOccurrence.det" limit-to="200" placeholder="Details about Occurrence"/>
+</div>
+<div class="modal-footer">
+  <span ng-show="item.name.length > 25" style="color:red">Item Name is too Long</span><br>
+  <button type="button" class="btn btn-default" ng-click="dismiss()">Close</button>
+  <button ng-show="!item.name" type="button" class="btn btn-info" style="opacity:0.5">Save Changes</button>
+  <button ng-show="item.name" type="button" class="btn btn-info" ng-click="close()">Save Changes</button>
+</div>

@@ -1,0 +1,50 @@
+<div>This is a birchbox test</div>
+<input type=text ng-model="title" />
+<br><br>
+<button ng-click="submitSingle(title)">Submit Movie Title</button>
+<button ng-click="consoleLogMovies()" style="float:right">Log movies</button>
+
+<br>
+*******************************<br><br>
+{{currentMovie}}
+<br>
+<img src="{{currentURL}}" style="width:100px; border:1px solid black"><br>
+*******************************
+<br><br>
+<button ng-click="submit()">Get all movies</button>
+<p>Movie Results</p>
+<table ng-repeat="movie in movieInfo" style="border:2px solid black; padding:10px; width:500px; text-align:center;">
+	<tr>
+		<td>Title:</td>
+		<td>{{movie.Title}}</td>
+	</tr>
+	<tr>
+		<td>Rating:</td>
+		<td>{{movie.Rated}}</td>
+	</tr>
+	<tr>
+		<td>Run Time:</td>
+		<td>{{movie.Runtime}}</td>
+	</tr>
+	<tr>
+		<td>Image:</td>
+		<td><img ng-src="{{movie.Poster}}" class="ng-scope" style="width:150px" /></td>
+	</tr>
+</table>
+
+<!-- <div ng-repeat="movie in movieInfo">
+	<tr>
+		<td>Title:</td>
+		<td>{{movie.Title}}</td>
+	</tr>
+	<tr>
+		<td>Rating:</td>
+		<td>{{movie.Rated}}</td>
+	</tr>
+	<tr>
+		<td>Run Time:</td>
+		<td>{{movie.Runtime}}</td>
+	</tr>
+	<img src"{{movie.Poster}}" style="width:100px"/>
+	<br><br>
+</div> -->

@@ -1,0 +1,51 @@
+<p class="explain">This page is testing an angular directive to notify user if they attempt to leave the page with unsaved changes on a form. 5-13-2016</p>
+<form name="myForm" confirm-on-exit>
+    myModel.text: <input name="input" ng-model="myModel.text">
+    <p>myModel.text = {{myModel.text}}</p>
+    <p>$pristine = {{myForm.$pristine}}</p>
+    <p>$dirty = {{myForm.$dirty}}</p>
+</form>
+<button ng-click="submit()">Save Changes</button>
+
+<br><br><br><br>
+
+<span>some text</span>
+
+<br><br>
+<!-- <div class="animate-slide" style="height:300px; width:5px; background-color:red; float:right;" ng-mouseover="toggleConsiderations()" ng-mouseleave="">
+	<textarea ng-show="showConsiderations" style="width:250px; height:300px; position:absolute; margin-right:300px;" focus-on="!!myResourceData">some text</textarea>
+</div> -->
+
+<div style="width: 50px; height: 50px; border-radius: 50px; position: relative; background-color:red"><span style="margin-top:14px; margin-left:10px; font-weight:bold; color:white; position:absolute">22%</span></div>
+
+<style>
+.successValidation{
+background-color: green;
+}
+.warningValidation{
+    background-color: yellow;
+}
+.errorValidation{
+    background-color: red;
+}
+
+
+
+</style>
+
+<div class="col-xs-4 col-md-4 col-lg-2" style="width:100%; height:80px; border-bottom:1px solid black;">
+			<table>
+				<tr>
+					<td style="width:33%; padding-right:10px"><div style="width: 50px; height: 50px; border-radius: 50px; position: relative; background-color:red"><span style="margin-top:14px; margin-left:10px; font-weight:bold; color:white; position:absolute">{{validationScore}}%</span></td>
+					<td style="width:33%; padding-right:10px">Barcode Number: 1<br>someType</td>
+					<td style="width:33%; padding-right:10px">icon for delete</td>
+				</tr>
+			</table>
+                </div>
+            <div style="float:right; margin-top:-50px">
+                <span class="fa-stack removeIcon" ng-click="removeValidation(validation, $index)">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-close fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+        </div>

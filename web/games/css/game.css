@@ -1,0 +1,32 @@
+body {
+
+}
+.leftBackground  { 
+    background-color:#99FF99;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+}
+.rightBackground {
+   background-color:#0000FF;
+   width: 50%;
+   position: absolute;
+   right: 0px;
+   height: 100%;
+}
+.centerMe {
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.childButton {
+    background-color:#66FFFF;
+}
+.adultButton {
+    background-color:#000000;
+}
+/*The carousel needs to break at 1199px and 991px.*/

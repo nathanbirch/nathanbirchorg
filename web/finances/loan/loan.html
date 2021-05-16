@@ -1,0 +1,39 @@
+<table class='tb_loan centMe'>
+  <tr>
+  	<th>Enter Loan Data:</th>
+    <td></td>
+  </tr>
+  <tr>
+  	<td>Amount of the loan ($):</td>
+    <td><input type="text" class="form-control" ng-model="loan.amount" currency-mask maxlength="10"></td>
+  </tr>
+  <tr>
+  	<td>Annual interest (%):</td>
+    <td><input type="text" class="form-control" ng-model="loan.apr" only-numbers maxlength="5"></td>
+  </tr>
+  <tr>
+  	<td>Repayment period (years):</td>
+    <td><input type="text" class="form-control" ng-enter="calculate()" ng-model="loan.years" maxlength="2"></td>
+  <tr>
+  	<th>Approximate Payments:</th>
+    <td><button class="btn btn-default w-full centMe" ng-click="calculate()">Calculate</button></td>
+  </tr>
+  <tr ng-show="calculated">
+  	<td>Monthly payment:</td>
+    <td>$<span class="output"><data class="money" ng-bind="loan.monthlyPayment"></data></span></td>
+  </tr>
+  <tr ng-show="calculated">
+  	<td>Total payment:</td>
+    <td>$<span class="output"><data class="money" ng-bind="loan.totalPayment"></data></span></td>
+  </tr>
+  <tr ng-show="calculated">
+  	<td>Total interest:</td>
+    <td>$<span class="output"><data class="money" ng-bind="loan.totalinterest"></data></span></td>
+  </tr>
+</table>
+<table class="tb_loan centMe b-top" ng-show="calculated">
+  <tr><td><b>Loan Balance, Cumulative Equity, and Interest Payments</b></td></tr>
+	<tr><td><canvas id="graph" width="400" height="250"></canvas></td></tr>
+</table>
+<!-- <br><br><br><br>
+<button class="btn btn-default btn-lg" id="generatePDF">Save as PDF</button> -->
