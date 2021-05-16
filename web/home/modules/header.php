@@ -15,7 +15,6 @@
      <li><a href="/">Home</a></li>
      <li><a href="/home/pages/favorites.php">Favorites</a></li>
      <li><a href="/home/pages/family.php">My Family</a></li>
-     <li><a href="/home/personal/personal.php">Personal</a></li>
      <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gospel Studies<span class="caret"></span></a>
       <ul class="dropdown-menu" role="menu">

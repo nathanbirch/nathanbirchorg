@@ -163,7 +163,7 @@
   <?php include $_SERVER['DOCUMENT_ROOT']. '/home/modules/footer.php';  ?>
   </div>
  <!-- display on the website when this page was updated last -->
-   <h6 style="float: right"><?php  echo 'Webpage last updated: '.date('j F, Y', getlastmod()); ?></h6>
+    
  </footer>
 </body>
 </html>

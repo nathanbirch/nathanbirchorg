@@ -119,7 +119,7 @@
   </div>
  <!-- display on the website when this page was updated last -->
  </footer>
-   <h6 style="float: right"><?php  echo 'Webpage last updated: '.date('j F, Y', getlastmod()); ?></h6>
+    
  
 </body>
 </html>

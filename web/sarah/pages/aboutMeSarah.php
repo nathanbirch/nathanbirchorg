@@ -67,7 +67,7 @@
  <!-- Include the footer.php file for the top navigation bar -->
   <div><?php include("/home2/nathaoe4/public_html/sarah/modules/footer2.php"); ?></div>
  <!-- display on the website when this page was updated last -->
-<!--   <h6 style="float: right"><?php  echo 'Webpage last updated: '.date('j F, Y', getlastmod()); ?></h6>-->
+<!--    -->
  </footer>
 </body>
 </html>
