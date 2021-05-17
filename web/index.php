@@ -72,14 +72,14 @@
   <div class="col-xs-12 col-sm-6 col-md-3">
    <ul style="padding-top:25px" class="sidebar-nav" id="sidebar">     
     <li class="sidebar-title"><h4>My Websites</h4></li>
-    <li><a href="http://www.bbguide.nathanbirch.org"><h4>BB Guide</h4></a></li>
-    <li><a href="birchbox"><h4>BirchBox</h4></a></li>
-    <li><a href="http://www.gospel.nathanbirch.org"><h4>Gospel</h4></a></li>
-    <li><a href="http://www.school.nathanbirch.org"><h4>School Development</h4></a></li>
-    <li><a href="finances"><h4>Finances</h4></a></li>
-    <li><a href="http://www.sarah.nathanbirch.org"><h4>Sarah's Blog</h4></a></li>
-    <li><a href="games"><h4>Games</h4></a></li>
-    <li><a style="border-radius:0px 0px 10px 10px;" href="test"><h4>Testing Center</h4></a></li>
+    <!-- <li><a href="http://www.bbguide.nathanbirch.org"><h4>BB Guide</h4></a></li> -->
+    <!-- <li><a href="birchbox"><h4>BirchBox</h4></a></li> -->
+    <li><a href="http://nathan-old.herokuapp.com/gospel/index.html"><h4>Gospel</h4></a></li>
+    <!-- <li><a href="http://nathan-old.herokuapp.com/school/index_1.php"><h4>School Development</h4></a></li> -->
+    <li><a href="http://nathan-old.herokuapp.com/finances/index.html"><h4>Finances</h4></a></li>
+    <!-- <li><a href="http://nathan-old.herokuapp.com/sarah/index.php"><h4>Sarah's Blog</h4></a></li> -->
+    <li><a href="http://nathan-old.herokuapp.com/games/index.php"><h4>Games</h4></a></li>
+    <li><a style="border-radius:0px 0px 10px 10px;" href="http://nathan-old.herokuapp.com/test/index.html"><h4>Testing Center</h4></a></li>
    </ul>
   </div> <!-- end of column class -->
   <!-- end of side nav --> 
