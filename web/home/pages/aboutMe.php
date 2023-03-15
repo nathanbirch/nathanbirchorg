@@ -27,7 +27,7 @@
 <div>
  <main class="container">
    <h1>About Me</h1>
-   <img src="/home/images/nathan1.jpg" class="mobile abpic">
+   <img src="../images/nathan1.jpg" class="mobile abpic">
    <div class="pad">
    <p>
        My name is Nathan Birch (just in case you didn't notice from the website name) and I love life. 
